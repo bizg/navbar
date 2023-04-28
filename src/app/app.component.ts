@@ -7,4 +7,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'rep-admin-navbar';
+  toggleSideBar: boolean = false;
+
+  constructor() {
+  }
+
+  toggleMenu(): void {
+    this.toggleSideBar = !this.toggleSideBar;
+  }
+
+
 }
