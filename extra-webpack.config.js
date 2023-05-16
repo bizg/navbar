@@ -2,6 +2,6 @@ const singleSpaAngularWebpack = require('single-spa-angular/lib/webpack').defaul
 
 module.exports = (config, options) => {
   const defaultConfig = singleSpaAngularWebpack(config, options);
-  defaultConfig.entry.main = [...new Set(defaultConfig.entry.main)];
+  // defaultConfig.entry.main = [...new Set(defaultConfig.entry.main)];
   return defaultConfig
 };
